@@ -1,0 +1,9 @@
+---
+# same config file
+- hosts: staging
+  remote_user: root
+  tasks:
+      - name: Create file
+        file:
+            path: /tmp/yallo
+            state: touch
